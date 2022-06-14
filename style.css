@@ -1,0 +1,22 @@
+body{
+    background-color: linen;
+    color: green;
+    margin: left 40px;
+    margin-right: 40px;
+    background-image: url("han2.jpeg");
+    
+    
+}
+h3{
+    text-align: center;
+    color: darkred;
+}
+
+hr{
+    height: 5px;
+    border: solid grey;
+
+}
+tfoot{
+    color: red;
+}

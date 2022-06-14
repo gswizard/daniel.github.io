@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- nav 는  현재 페이지의 다른 부분과 연결되는 네비게이션 링크(navigation links)들의 집합을 정의할 때 사용. 
+             <nav> 요소를 사용하는 일반적인 예로는 메뉴, 목차, 인덱스 등이 있습니다.(시맨틱형태 고려) -->
+    <nav class="row border-bottom p-3">
+        <div class="col offset-0">
+            <img src="img\coffeeBottari.png" width="80%" height="50" class="rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col"> 원두 </div>
+        <div class="col"> 생두 </div>
+        <div class="col"> 도매 </div>
+        <div class="col"> 도서/상품 </div>
+        <div class="col"> ABOUT </div>
+        <div class="col"> 아카이브 </div>
+        <div class="col">
+            <img src="img\on.png" width="50" height="50" class="rounded mx-auto d-block" alt="on/off">
+        </div>
+        <div class="col">
+            <img src="img\user.png" width="50" height="50" class="rounded mx-auto d-block" alt="user">
+        </div>
+        <div class="col">
+            <img src="img\sb.png" width="50" height="50" class="rounded mx-auto d-block" alt="shopping basket">
+        </div>
+        <div class="col">
+            <img src="img\Bl.png" width="50" height="50" class="rounded mx-auto d-block" alt="...">
+        </div>
+        <div class="col">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>language</option>
+                <option value="1">한국어</option>
+                <option value="2">English</option>
+            </select>
+        </div>
+    </nav>
+    <!-- section 태그
+     주제별 영역들을 그룹화 하기위해 사용한다. 주로 자식 요소로 hn태그 (h1~h6) 태그와 일반적인 컨텐츠가 포함된다. -->
+    <section class="row mt-5">
+        <section class="col-5 offset-1 text-center">
+            <img src="img/coffee.png" width="400" height="500" class="rounded mx-auto d-block" alt="img">
+        </section>
+        <section class="col-5">
+            <!-- article 태그
+    aricle 태그는 section과 마찬가지로 "특정한 영역을 그룹화"할 때 사용함. 하지만 section 태그와는 다르게 article 태그는
+    해당 페이지에서 다른 페이지나 다른 영역에 언제든지 독립적으로 갖다 붙힐 수 있는 영역을 그룹화한다.
+    예)- 블로그 및 SNS 영역, 뉴스 기사, 신문 논평 등에서 사용한다. -->
+            <article>
+                <div>
+                    <h2>[싱글오리진]</h1>
+                </div>
+                <div>
+                    <h2>파푸아뉴기니</h1>
+                </div>
+                <div>
+                    <h2>모리타[강배전]</h1>
+                </div>
+            </article>
+            <article>
+                <div>Papua New Guinea</div>
+                <div>Morita</div>
+            </article>
+            <div class="mt-4">
+                <h2>14,000원</h2>
+            </div>
+            <article class="mt-4">
+                <div>제조일 2022.06.13</div>
+                <div>강배전 [Dark Roasting]</div>
+                <div>스페셜티 강배전</div>
+            </article>
+            <section class="border-top border-bottom mt-3">
+                <div class="row mt-3"><span class="col-3">배송방법</span><span class="col">택배</span></div>
+                <div class="row mt-3 mb-3"><span class="col-3">배송비</span><span class="col">3,000원(40,000원 이상 구매 시
+                        무료)</span></div>
+            </section>
+            <section class="border-bottom">
+                <div class="row mt-3">
+                    <span class="col-3">옵션</span>
+                    <span class="col">
+                        <select class="form-control">
+                            <option value="0">-[필수]옵션을 선택해주세요-</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="row mt-3 mb-3"><span class="col-3">분쇄</span><span class="col">
+                        <select class="form-control">
+                            <option value="0">-[필수]옵션을 선택해주세요-</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </span></div>
+            </section>
+        </section>
+    </section>
+    <footer class="row">
+        <div class="text-end col-11 mt-5 fw-bold"><span>총금액 </span><span class="h2">0원</span></div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
