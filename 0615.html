@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script>
+    function calc(){
+        //입력값 가져오기
+        let inputVar1 =  document.getElementById('input1').value;
+        let inputVar2 =  document.getElementById('input2').value;
+        console.log('입력값1 엘리먼트', inputVar1)
+        console.log('입력값2 엘리먼트',inputVar2)
+
+        // 연산자 가져오기
+        let op = document.getElementById('operator').value;
+        console.log('선택한 연산자', op)
+        // op.value => plus, minus, multi, divide
+        //입력값들과 연산자를 가지고 연산하기
+        let parseValue1 = parseFloat(inputVar1);
+        let parseValue2 = parseFloat(inputVar2);
+
+        let result;
+        if (op === 'plus'){
+            // 더하기
+            result = parseValue1 + parseValue2;
+        }else if (op === 'minus'){
+            // 빼기
+            result = parseValue1 - parseValue2;
+        }else if (op === 'multi'){
+            // 곱하기
+            result = parseValue1 * parseValue2;
+        }else {
+            // 나누기
+            result = parseValue1 / parseValue2;
+        }
+        console.log('결과값', result)
+
+        // 결과값 입력창에 결과를 보여주기
+        document.getElementById('result').value = result;
+
+
+    }
+</script>
+
+</head>
+<body>
+
+
+<!--
+계산기만들기
+ 입력값1(input), 입력값2(input)
+ 연산부호(+,-,*,/)(select)
+ 계산하기(button)
+ 결과(input)
+-->
+<section class="p-3">
+    <div class="mb-2"><label>입력값1</label>
+        <input id="input1" class="form-control" type="number" value="">
+    </div>
+    <div class="mb-2>"><label>입력값2</label>
+        <input id="input2" class="form-control" type="number" value="">
+    </div>
+
+    <div>
+        <select id="operator" class="form-control">
+            <option value="plus">더하기</option>
+            <option value="minus">빼기</option>
+            <option value="multi">곱하기</option>
+            <option value="divide">나누기</option>
+        </select>
+    </div>
+    <div><button type="button" class="btn btn-primary" onclick="calc()">계산하기</button></div>
+    <div class="mt-2"><label>결과</label><input id="result" type="text" class="form-control"></div>
+</section>
+
+
+</body>
+</html>
